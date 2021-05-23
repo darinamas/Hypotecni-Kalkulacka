@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AeA-bN-X4i">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -16,35 +16,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-LZ-oSR">
-                                <rect key="frame" x="43" y="110" width="300" height="382"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pys-gI-e0h">
+                                <rect key="frame" x="170" y="587" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.52455059039999996" blue="0.91341756409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IyI-9L-Xkk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Měsíční splátka hypotéky celkem:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTa-b9-soM">
+                                <rect key="frame" x="43" y="662" width="255" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKr-8D-2bn">
+                                <rect key="frame" x="159" y="712" width="199" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-LZ-oSR">
+                                <rect key="frame" x="57" y="135" width="300" height="402.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="6io-Sd-2s1">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-e9-klM">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="54.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kupní cena nemovitosti" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrc-GH-lYu">
-                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o7w-7y-psR">
-                                                <rect key="frame" x="0.0" y="20.5" width="300" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="hzQ-jQ-bcA"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                            </textField>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="zrc-GH-lYu" firstAttribute="leading" secondItem="6io-Sd-2s1" secondAttribute="leading" id="UHe-zo-FIf"/>
-                                            <constraint firstItem="zrc-GH-lYu" firstAttribute="top" secondItem="6io-Sd-2s1" secondAttribute="top" id="a3y-oZ-nK6"/>
-                                            <constraint firstItem="o7w-7y-psR" firstAttribute="top" secondItem="zrc-GH-lYu" secondAttribute="bottom" id="mFj-qK-dAs"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-e9-klM">
-                                        <rect key="frame" x="0.0" y="103.5" width="300" height="62.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kolik si chcete půjčit?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWe-EP-9eb">
                                                 <rect key="frame" x="0.0" y="0.0" width="163.5" height="20.5"/>
@@ -53,9 +49,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xH-5M-hge">
-                                                <rect key="frame" x="0.0" y="28.5" width="300" height="34"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="300" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="a5n-W0-7kc"/>
+                                                    <constraint firstAttribute="width" constant="300" id="qTM-94-gDR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -63,7 +59,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ayr-zg-Xf0">
-                                        <rect key="frame" x="0.0" y="215" width="300" height="62.5"/>
+                                        <rect key="frame" x="0.0" y="169.5" width="300" height="62.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kolik let chcete splácet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJK-p3-zv1">
                                                 <rect key="frame" x="0.0" y="0.0" width="184" height="20.5"/>
@@ -74,7 +70,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3em-gW-3Md">
                                                 <rect key="frame" x="0.0" y="28.5" width="300" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="Dfk-d8-9eM"/>
+                                                    <constraint firstAttribute="width" constant="300" id="8HE-tR-NW4"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -82,7 +78,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="rgn-5w-DSY">
-                                        <rect key="frame" x="0.0" y="326.5" width="300" height="55.5"/>
+                                        <rect key="frame" x="0.0" y="347" width="300" height="55.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roční úrok" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yu-QA-WZ7">
                                                 <rect key="frame" x="0.0" y="0.0" width="80.5" height="20.5"/>
@@ -93,7 +89,7 @@
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omP-3t-JHk">
                                                 <rect key="frame" x="0.0" y="21.5" width="300" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="300" id="508-AM-iEb"/>
+                                                    <constraint firstAttribute="width" constant="300" id="yBB-FC-DAN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
@@ -102,35 +98,57 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pys-gI-e0h">
-                                <rect key="frame" x="170" y="543" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.52455059039999996" blue="0.91341756409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IyI-9L-Xkk"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pys-gI-e0h" secondAttribute="trailing" constant="198" id="1IE-V4-1fy"/>
-                            <constraint firstItem="pys-gI-e0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="4rP-Ce-Ybu"/>
-                            <constraint firstItem="ry8-LZ-oSR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="66" id="7jx-Ls-jU7"/>
-                            <constraint firstItem="pys-gI-e0h" firstAttribute="top" secondItem="ry8-LZ-oSR" secondAttribute="bottom" constant="51" id="Laf-is-vkf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ry8-LZ-oSR" secondAttribute="bottom" constant="370" id="MOj-aV-Gfy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ry8-LZ-oSR" secondAttribute="trailing" constant="71" id="jRm-be-EoM"/>
-                            <constraint firstItem="ry8-LZ-oSR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="o2x-SV-emd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ry8-LZ-oSR" secondAttribute="trailing" constant="57" id="5fI-GF-dYV"/>
+                            <constraint firstItem="WTa-b9-soM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="Dyy-de-Rll"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WTa-b9-soM" secondAttribute="trailing" constant="116" id="IIn-VT-YTz"/>
+                            <constraint firstItem="ry8-LZ-oSR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="Ipm-aM-8oJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oKr-8D-2bn" secondAttribute="trailing" constant="56" id="KLd-DL-e5t"/>
+                            <constraint firstItem="oKr-8D-2bn" firstAttribute="top" secondItem="WTa-b9-soM" secondAttribute="bottom" constant="29.5" id="Sz9-JL-QRz"/>
+                            <constraint firstItem="pys-gI-e0h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="T3R-F4-lde"/>
+                            <constraint firstItem="pys-gI-e0h" firstAttribute="top" secondItem="ry8-LZ-oSR" secondAttribute="bottom" constant="49.5" id="Xgf-v3-pK9"/>
+                            <constraint firstItem="ry8-LZ-oSR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="bWU-so-5iW"/>
+                            <constraint firstItem="WTa-b9-soM" firstAttribute="top" secondItem="pys-gI-e0h" secondAttribute="bottom" constant="45" id="cdi-l5-enN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pys-gI-e0h" secondAttribute="trailing" constant="198" id="hGL-QR-ZJW"/>
+                            <constraint firstItem="oKr-8D-2bn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="zSH-FB-tGR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Fbp-qF-h8k"/>
                     <connections>
                         <outlet property="amountOfLoan" destination="8xH-5M-hge" id="CZN-PV-mBu"/>
+                        <outlet property="monthPlatba" destination="oKr-8D-2bn" id="QgI-LX-fwQ"/>
                         <outlet property="numberOfYears" destination="3em-gW-3Md" id="ybS-Aw-flx"/>
                         <outlet property="perCent" destination="omP-3t-JHk" id="KGn-Wr-w0Y"/>
-                        <outlet property="priceOfHouse" destination="o7w-7y-psR" id="gvh-6k-Qhq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="112.5"/>
+        </scene>
+        <!--HYPOTEČNÍ KALKULAČKA-->
+        <scene sceneID="3eg-ko-c98">
+            <objects>
+                <navigationController title="HYPOTEČNÍ KALKULAČKA" automaticallyAdjustsScrollViewInsets="NO" id="AeA-bN-X4i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ziz-Jq-uqK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2MQ-Ij-eGT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoX-M5-CEG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="112.5"/>
         </scene>
